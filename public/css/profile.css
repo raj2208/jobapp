@@ -1,0 +1,116 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e6f2e6; /* Light green background */
+  color: #333;
+}
+
+.header {
+  background-color: #2e8b57; /* Dark green header */
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  flex-grow: 1; /* Take up remaining space */
+  text-align: center; /* Center align text */
+}
+
+#backButton,
+#logoutButton {
+  background-color: #fff;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#backButton {
+  background-color: #63ea63; /* Darker green */
+  margin-right: 10px; /* Add margin between buttons */
+}
+
+#backButton:hover {
+  background-color: #fbff00; /* Even darker green on hover */
+}
+
+#logoutButton {
+  background-color: #62ea50; /* Red logout button */
+}
+
+#logoutButton:hover {
+  background-color: #fbff00; /* Darker red on hover */
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #2e8b57; /* Dark green button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #257a4b; /* Darker green on hover */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button#saveProfileButton {
+  background-color: #28a745; /* Green save button */
+}

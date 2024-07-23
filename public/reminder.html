@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set Reminder</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reminder.css" />
+    <script defer src="js/reminders.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Set Reminder</h1>
+    </header>
+    <main class="main-content">
+      <section class="form-section">
+        <form id="reminderForm">
+          <input
+            type="text"
+            id="applicationId"
+            placeholder="Application ID"
+            required
+          />
+          <input type="date" id="reminderDate" required />
+          <div class="button-container">
+            <button type="submit" class="btn">Set Reminder</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.6/axios.min.js"></script>
+  </body>
+</html>
